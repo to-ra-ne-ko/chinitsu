@@ -1,0 +1,12 @@
+>pip show pyinstaller
+Name: pyinstaller
+Version: 6.11.0
+Summary: PyInstaller bundles a Python application and all its dependencies into a single package.
+Home-page: https://www.pyinstaller.org/
+Author: Hartmut Goebel, Giovanni Bajo, David Vierra, David Cortesi, Martin Zibricky
+Author-email:
+License: GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)
+Location: C:\Users\XXXXXXXX\AppData\Local\Programs\Python\Python312\Lib\site-packages
+Requires: altgraph, packaging, pefile, pyinstaller-hooks-contrib, pywin32-ctypes, setuptools
+Required-by:
+>pyinstaller chinitsu_py_tk.py --onefile --noconsole --distpath DIR
