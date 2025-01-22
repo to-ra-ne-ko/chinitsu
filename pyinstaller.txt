@@ -9,4 +9,14 @@ License: GPLv2-or-later with a special exception which allows to use PyInstaller
 Location: C:\Users\XXXXXXXX\AppData\Local\Programs\Python\Python312\Lib\site-packages
 Requires: altgraph, packaging, pefile, pyinstaller-hooks-contrib, pywin32-ctypes, setuptools
 Required-by:
->pyinstaller chinitsu_py_tk.py --onefile --noconsole --distpath DIR
+>pyinstaller chinitsu_tk.py --onefile --noconsole --distpath DIR
+
+
+※エラー発生のためspecファイルを手修正
+※  hiddenimports=[],
+※⇒hiddenimports=['mido.backends.rtmidi'],
+※
+※再度、コマンド実行（対象はpyではなくspecファイルに）
+※   --onefile --noconsoleはエラーのため2回目は不要
+>pyinstaller chinitsu_tk.spec  --distpath DIR
+
